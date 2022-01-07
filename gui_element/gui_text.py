@@ -26,9 +26,10 @@ if __name__ == '__main__':
     b2.pack()
     scroll=tk.Scrollbar()
     scroll.pack(side=tkinter.RIGHT, fill=tkinter.Y)
-    t = tk.Text(window, height=1)
+    t = tk.Text(window)
     t.pack(side=tkinter.LEFT, fill=tkinter.Y)
     scroll.config(command=t.yview)
     t.config(yscrollcommand=scroll.set)
+
 
     window.mainloop()
